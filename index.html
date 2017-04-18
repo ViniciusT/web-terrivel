@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biiirl</title>
+     <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<form  action="http://terrivel.herokuapp.com/monster" method="GET"> <!-- ⬅️ GET! -->
+    <h3 style="">Formulario do Get</h3>
+   <div>
+    <label><span>Nome do Bixão:</span>
+        <input name="nome" placeholder="Nome de monstro!">
+    </label>
+   </div>
+    <div>
+    <label> <span>Numero de pedras:</span>
+        <input name="num_pedras" type="number" min="0" placeholder="Bixão ta com fome"></label></div>
+    <div>
+    <label><span>Tamanho pedras:</span>
+        <input style="vertical-align: middle" type="range" min="1" max="7" step="0.5" name="tam_pedras" placeholder="Da grande que o Bixão é maromba">
+    </label>
+
+    </div>
+    <div>
+        <label><span>Cor do Céu 1:</span>
+            <input name="corCeu1"  type="color" >
+        </label>
+    </div>
+    <div>
+        <label><span>Cor do Céu 2:</span>
+            <input name="corCeu2"  type="color"  >
+        </label>
+    </div>
+    <div>
+        <label><span>Tipo das Pedras</span><select name="tipo_pedras">
+            <option>marroada</option>
+            <option>ametista</option>
+            <option>topazio</option>
+            <option>espinela</option>
+        </select></label>
+    </div>
+    <div>
+        <label><span>Pedras Sortidas</span><select name="tipo_pedras_sortidas">
+            <option>sim</option>
+            <option>não</option>
+        </select></label>
+    </div>
+<button>"Enviar"</button>
+</form>
+
+<form action="http://terrivel.herokuapp.com/monster" method="POST"> <!-- ⬅️ GET! -->
+    <h3>Formulario do Post</h3>
+    <div>
+        <label><span>Nome do Bixão:</span>
+            <input name="nome" placeholder="Nome de monstro!">
+        </label>
+    </div>
+    <div>
+        <label> <span>Numero de pedras:</span>
+            <input name="num_pedras" type="number" min="0" placeholder="Bixão ta com fome"></label></div>
+    <div >
+        <label><span>Tamanho pedras:</span>
+            <input name="tam_pedras" style="vertical-align: middle" type="range" min="1" max="7" step="0.5"  placeholder="Da grande que o Bixão é maromba">
+        </label>
+    </div>
+    <div >
+        <label><span>Cor do Céu 1:</span>
+            <input name="corCeu1"  type="color" >
+        </label>
+    </div>
+    <div >
+        <label><span>Cor do Céu 2:</span>
+            <input name="corCeu2"  type="color"  >
+        </label>
+    </div>
+    <div>
+    <label><span>Tipo das Pedras</span><select name="tipo_pedras">
+        <option>marroada</option>
+        <option>ametista</option>
+        <option>topazio</option>
+        <option>espinela</option>
+    </select></label>
+    </div>
+    <div>
+    <label><span>Pedras Sortidas</span><select name="tipo_pedras_sortidas">
+        <option>sim</option>
+        <option>não</option>
+    </select></label>
+    </div>
+    <button>"Enviar"</button>
+</form>
+</body>
+</html>
